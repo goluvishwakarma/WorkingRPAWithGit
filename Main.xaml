@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1268,1864.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1268,1895.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -105,26 +105,27 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1278.4,1800" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1278.4,1830.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="isParaExist" />
       <Variable x:TypeArguments="x:Int32" Name="pIdx" />
       <Variable x:TypeArguments="x:String" Name="ai_description" />
       <Variable x:TypeArguments="x:String" Name="getPara" />
       <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="ParaInfo" />
+      <Variable x:TypeArguments="x:String" Name="More_Info" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Bard" sap:VirtualizedContainerService.HintSize="1216,1688" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="2acb3e2a-9532-4463-b29f-f93e6e6fde13" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Bard" sap:VirtualizedContainerService.HintSize="1216,1718.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="2acb3e2a-9532-4463-b29f-f93e6e6fde13" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1182.4,1471.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1182.4,1501.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -163,17 +164,17 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:InterruptibleWhile Condition="True" CurrentIndex="[pIdx]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1120,875.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile Condition="True" CurrentIndex="[pIdx]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1120,905.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1086.4,738.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1086.4,768.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'AI, RPA,'" sap:VirtualizedContainerService.HintSize="1043.2,648.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2acb3e2a-9532-4463-b29f-f93e6e6fde13" Timeout="30" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'AI, RPA,'" sap:VirtualizedContainerService.HintSize="1043.2,679.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2acb3e2a-9532-4463-b29f-f93e6e6fde13" Timeout="30" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="540.8,430.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="540.8,460.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,7 +185,7 @@
                             <uix:TargetAnchorable BrowserURL="https://bard.google.com/chat/ef2393fef667e46f?utm_source=sem&amp;utm_medium=paid-media&amp;utm_campaign=q4enIN_sem7" CvTextArea="502, 442, 814, 22" CvType="AnyWordGroup" DesignTimeRectangle="504, 439, 1275, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'AI, RPA,'" FullSelectorArgument="[&quot;&lt;webctrl tag='P' parentclass='markdown markdown-main-panel' parentid='message-content-idr*' idx='&quot;+(pIdx + 1).ToString+&quot;' /&gt;&quot;]" FuzzySelectorArgument="&lt;webctrl tag='P' parentclass='markdown markdown-main-panel' parentid='message-content-idr_ef2393fef667e4be' type='' class='' aaname='' /&gt;" Guid="e1b3e99a-7782-44c9-bd4e-ddab41ab654e" ImageBase64="" InformativeScreenshot="b6a68a94422e420f6137a3251318025d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bard' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive" />
                           </uix:NGetText.Target>
                         </uix:NGetText>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,117.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -193,6 +194,14 @@
                                 </ui:AssignOperation.To>
                                 <ui:AssignOperation.Value>
                                   <InArgument x:TypeArguments="x:String">[ai_description + getPara.ToString.Trim]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[More_Info]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String">[More_Info + getPara.ToString.Trim + ai_description.ToString.Trim]</InArgument>
                                 </ui:AssignOperation.Value>
                               </ui:AssignOperation>
                             </scg:List>
